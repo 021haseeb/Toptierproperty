@@ -124,7 +124,7 @@ export default function TestimonialsPage() {
                   name={testimonial.name}
                   role={testimonial.role}
                   rating={5}
-                  image={true}
+image="/api/placeholder/80/80"
                 />
               ))}
             </motion.div>
