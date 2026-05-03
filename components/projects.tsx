@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { projects } from "@/lib/data";
 
 export default function Projects() {
@@ -88,15 +89,16 @@ export default function Projects() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-center mt-12"
         >
-          <motion.a
-            href="#contact"
-            className="inline-flex items-center gap-2 bg-primary-dark text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-dark/90 transition-colors"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.98 }}
-          >
-            View All Projects
-            <ArrowRight className="w-5 h-5" />
-          </motion.a>
+          <Link href="/projects">
+            <motion.a
+              className="inline-flex items-center gap-2 bg-primary-dark text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-dark/90 transition-colors"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              View All Projects
+              <ArrowRight className="w-5 h-5" />
+            </motion.a>
+          </Link>
         </motion.div>
       </div>
     </section>

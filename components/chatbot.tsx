@@ -115,7 +115,7 @@ export default function Chatbot() {
 {/* Chat Toggle Button - Floating Robot */}
       <motion.button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50"
+        className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-[100] md:z-50"
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ type: "spring", stiffness: 260, damping: 20 }}
@@ -125,29 +125,27 @@ export default function Chatbot() {
           className="relative"
         >
           {/* Question Bubble - Only show when chat is closed */}
-          <AnimatePresence>
+              <AnimatePresence>
             {!isOpen && (
               <motion.div
-                initial={{ opacity: 0, scale: 0, y: 10 }}
-                animate={{ opacity: 1, scale: 1, y: 0 }}
-                exit={{ opacity: 0, scale: 0, y: 10 }}
-className="absolute bottom-full left-1/2 -translate-x-[70%] md:-translate-x-1/2 mb-3"
-                style={{ transformOrigin: "bottom center" }}
+                initial={{ opacity: 0, scale: 0, x: 10 }}
+                animate={{ opacity: 1, scale: 1, x: 0 }}
+                exit={{ opacity: 0, scale: 0, x: 10 }}
+                className="absolute left-0 top-1/2 -translate-y-1/2 -ml-2 w-fit max-w-[calc(100vw-6rem)] max-w-sm sm:max-w-md"
+                style={{ transformOrigin: "right center" }}
               >
                 <motion.div
                   animate={questionBubbleAnimation}
-                  className="relative whitespace-nowrap"
+                  className="relative"
                 >
                   {/* Speech bubble shape */}
-                  <div className="bg-gradient-to-r from-accent-gold to-yellow-500 text-primary-dark px-3 py-1.5 md:px-4 md:py-2 rounded-xl md:rounded-2xl rounded-br-md shadow-lg">
-                    <p className="font-semibold text-xs md:text-sm whitespace-nowrap">
-                      Have any question?
-                    </p>
-                    <p className="font-bold text-[10px] md:text-xs">Ask me...</p>
+                  <div className="bg-gradient-to-r from-accent-gold to-yellow-500 text-primary-dark px-2 py-1.5 sm:px-3 sm:py-2 md:px-4 rounded-xl md:rounded-2xl rounded-bl-md shadow-lg max-w-full break-words line-clamp-2">
+                    <p className="font-semibold text-xs sm:text-sm leading-tight">Have any question?</p>
+                    <p className="font-bold text-[10px] sm:text-xs leading-tight">Ask me...</p>
                   </div>
                   {/* Bubble pointer */}
                   <motion.div
-                    className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 md:w-3 md:h-3 bg-accent-gold rotate-45"
+                    className="absolute -right-1 top-1/2 -translate-y-1/2 w-1.5 h-1.5 sm:w-2 sm:h-2 md:w-3 md:h-3 bg-accent-gold -rotate-45"
                   />
                 </motion.div>
               </motion.div>
@@ -246,7 +244,7 @@ className="absolute bottom-full left-1/2 -translate-x-[70%] md:-translate-x-1/2 
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.8 }}
             transition={{ type: "spring", stiffness: 300, damping: 25 }}
-            className="fixed bottom-20 right-2 sm:bottom-24 sm:right-6 z-50 w-[calc(100vw-1rem)] sm:w-80 md:w-96 max-w-[calc(100vw-2rem)] bg-primary-dark rounded-2xl overflow-hidden shadow-2xl border border-accent-gold/30"
+            className="fixed bottom-20 right-2 sm:bottom-24 sm:right-6 z-[100] md:z-[100] w-[calc(100vw-1rem)] sm:w-80 md:w-96 max-w-[calc(100vw-2rem)] bg-primary-dark rounded-2xl overflow-hidden shadow-2xl border border-accent-gold/30 md:-right-6 md:bottom-24"
           >
             {/* Chat Header */}
             <motion.div

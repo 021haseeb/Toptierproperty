@@ -1,8 +1,6 @@
-# TODO - Add FAQ Section to Homepage
+# Logo Fix Progress
 
-## Status: Completed
-
-- [x] Add FAQ data to lib/data.ts
-- [x] Create FAQ component (components/faq.tsx)
-- [x] Update app/page.tsx to include FAQ section
-- [x] Test and verify the implementation
+- [x] 1. Move Toptierlogo.png to public/Assets/
+- [x] 2. Edit components/navigation.tsx (update Image src/size/styling)
+- [x] 3. Verify in browser (dev server recompiled successfully)
+- [x] 4. Complete task

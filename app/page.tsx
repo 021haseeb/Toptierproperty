@@ -3,7 +3,7 @@ import Hero from "@/components/hero";
 import TrustIndicators from "@/components/trust-indicators";
 import Services from "@/components/services";
 import Projects from "@/components/projects";
-import About from "@/components/about";
+
 import Testimonials from "@/components/testimonials";
 import FAQ from "@/components/faq";
 import CTA from "@/components/cta";
@@ -18,7 +18,7 @@ export default function Home() {
       <TrustIndicators />
       <Services />
       <Projects />
-      <About />
+
       <Testimonials />
       <FAQ />
       <CTA />

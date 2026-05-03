@@ -20,11 +20,12 @@ export default function Navigation() {
 
   const navLinks = [
     { label: "Home", href: "/" },
-    { label: "About", href: "#about" },
-    { label: "Services", href: "#services" },
-    { label: "Projects", href: "#projects" },
-    { label: "Testimonials", href: "#testimonials" },
-    { label: "Contact", href: "#contact" },
+{ label: "About", href: "/about" },
+    { label: "Services", href: "/services" },
+{ label: "Projects", href: "/projects" },
+{ label: "Testimonials", href: "/testimonials" },
+
+{ label: "Contact", href: "/contact" },
   ];
 
   return (
@@ -65,8 +66,8 @@ export default function Navigation() {
                 {link.label}
               </motion.a>
             ))}
-            <motion.a
-              href="#contact"
+              <motion.a
+              href="/contact"
               className="bg-accent-gold text-primary-dark px-5 py-2.5 rounded-lg font-semibold text-sm hover:bg-accent-gold/90 transition-colors"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
@@ -106,7 +107,7 @@ export default function Navigation() {
                 </a>
               ))}
               <a
-                href="#contact"
+                href="/contact"
                 className="block bg-accent-gold text-primary-dark px-5 py-3 rounded-lg font-semibold text-center"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
