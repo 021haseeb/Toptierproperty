@@ -1,18 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { 
-  Building, 
-  MapPin, 
-  Phone, 
-  Mail, 
-  Clock,
-  Facebook,
-  Twitter,
-  Linkedin,
-  Instagram,
-  ArrowRight
-} from "lucide-react";
+import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { ArrowRight, MapPin, Phone, Mail, Clock } from "lucide-react";
 import Image from "next/image";
 import logo from "./Assets/Toptierlogo.png";
 import { quickLinks, serviceLinks } from "@/lib/data";
@@ -43,7 +33,7 @@ export default function Footer() {
             </p>
             {/* Social Icons */}
             <div className="flex items-center gap-3">
-              {[Facebook, Twitter, Linkedin, Instagram].map((SocialIcon, index) => (
+              {[FaFacebook, FaTwitter, FaLinkedin, FaInstagram].map((SocialIcon, index) => (
                 <motion.a
                   key={index}
                   href="#"
