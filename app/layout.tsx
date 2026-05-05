@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${playfair.variable} ${dmSans.variable} font-body antialiased`}>
+      <body suppressHydrationWarning className={`${dmSans.variable} font-sans antialiased`}>
         {children}
       </body>
     </html>

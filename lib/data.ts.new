@@ -2,55 +2,56 @@ export const services = [
   {
     icon: "Palette",
     title: "Interior Painting",
-    description: "Interior painting with high-quality finishes, including walls, ceilings, and trims.",
+    description: "Professional interior painting with high-quality finishes for walls, ceilings, and trims.",
   },
   {
     icon: "Sun",
     title: "Exterior Painting",
-    description: "Exterior painting with durable, weather-resistant finishes for homes and buildings.",
+    description: "Durable exterior painting solutions for homes and buildings, weather-resistant finishes.",
   },
   {
     icon: "Home",
     title: "Roofing Services",
-    description: "Roof installation, repair, maintenance, leak fixing, and waterproofing solutions.",
+    description: "Complete roof installation, repair, maintenance, leak fixing, and waterproofing solutions.",
   },
   {
     icon: "Panels",
     title: "Flooring Services",
-    description: "Installation and replacement of tile, hardwood, and vinyl flooring with premium finishing.",
+    description: "Premium installation and replacement of tile, hardwood, vinyl flooring with expert finishing.",
   },
   {
     icon: "Wrench",
     title: "Plumbing Services",
-    description: "Complete plumbing solutions including pipe installation, leak fixing, and kitchen/bathroom plumbing.",
+    description: "Full plumbing solutions including pipe installation, leak repairs, and kitchen/bathroom plumbing.",
   },
   {
     icon: "Hammer",
     title: "Complete Remodeling",
-    description: "Full home renovation including kitchen remodeling, bathroom upgrades, and structural improvements.",
+    description: "Full home renovation including kitchen, bathroom upgrades, and structural improvements.",
   },
 ];
 
+// ... rest of existing exports unchanged
 export const projects = [
   {
-    name: "Premium Roofing Installation",
+    name: "Luxury Downtown Apartments",
     location: "New York, NY",
-    image: "/Assets/roofing.png",
+    image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
   },
   {
-    name: "Luxury Flooring Transformation",
+    name: "Corporate Office Tower",
     location: "Chicago, IL",
-    image: "/Assets/Flooring.png",
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
   },
   {
-    name: "Expert Plumbing Solutions",
-    location: "Los Angeles, CA",
-    image: "/Assets/plumbing.png",
+    name: "Modern Residential Complex",
+    location: "Austin, TX",
+    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&q=80",
   },
   {
-    name: "Complete Remodeling Project",
-    location: "Miami, FL",
-    image: "/Assets/renovation.png",
+    name: "Historic Building Restoration",
+    location: "Boston, MA",
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
   },
 ];
 
@@ -90,7 +91,7 @@ export const quickLinks = [
 ];
 
 export const serviceLinks = [
-{ label: "Interior Painting", href: "#services" },
+  { label: "Interior Painting", href: "#services" },
   { label: "Exterior Painting", href: "#services" },
   { label: "Roofing Services", href: "#services" },
   { label: "Flooring Services", href: "#services" },
@@ -124,3 +125,4 @@ export const faqs = [
     answer: "We provide regular detailed reports on your property's performance, including financial statements, maintenance updates, and occupancy rates. Owners have access to our online portal for real-time updates."
   }
 ];
+

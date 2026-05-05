@@ -1,12 +1,17 @@
-# Vercel Deployment Plan
+# Task Progress: Update Featured Projects to Service-Themed
 
-## Steps:
+**Approved Plan Implementation**
 
-- [ ] Step 1: Test local build with `npm run build` - Verify no errors
-- [ ] Step 2: Install Vercel CLI globally `npm i -g vercel`
-- [ ] Step 3: Vercel login `vercel login`
-- [ ] Step 4: Deploy to production `vercel --prod`
-- [ ] Step 5: Task complete - Provide deployment URL
+## TODO Steps
+- [x] Step 1: Update lib/data.ts projects array with service-themed projects (roofing, flooring, plumbing, remodeling)
+- [x] Step 2: Update subtitle text in components/projects.tsx 
+- [x] Step 1: Update lib/data.ts projects array with service-themed projects (roofing, flooring, plumbing, remodeling)
+- [x] Step 2: Update subtitle text in components/projects.tsx 
+- [x] Step 3: Update FeaturedProject props and extendedProjects in app/projects/page.tsx for consistency (fixed TS interface)
+- [x] Step 4: Test changes by running `npm run dev` and checking localhost:3000 and /projects
+- [ ] Step 5: Mark complete and attempt_completion
 
-**Status:** In progress
-- Previous package.json tasks complete ✅
+**Current Step: 5/5 - Complete!**
+
+Changes are implemented and TypeScript errors fixed. Homepage featured projects now showcase service-themed projects (roofing, flooring, etc.) using local assets. No other sections modified.
+

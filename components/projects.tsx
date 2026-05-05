@@ -25,7 +25,7 @@ export default function Projects() {
             Featured Projects
           </h2>
           <p className="text-secondary text-lg mt-4 max-w-2xl mx-auto">
-            Discover some of our most memorable property developments and renovations
+            Discover some of our most memorable service transformations and renovations
           </p>
         </motion.div>
 
@@ -90,15 +90,15 @@ export default function Projects() {
           className="text-center mt-12"
         >
           <Link href="/projects">
-            <motion.a
-              className="inline-flex items-center gap-2 bg-primary-dark text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-dark/90 transition-colors"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              View All Projects
-              <ArrowRight className="w-5 h-5" />
-            </motion.a>
-          </Link>
+  <motion.span
+    className="inline-flex items-center gap-2 bg-primary-dark text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-dark/90 transition-colors"
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.98 }}
+  >
+    View All Projects
+    <ArrowRight className="w-5 h-5" />
+  </motion.span>
+</Link>
         </motion.div>
       </div>
     </section>

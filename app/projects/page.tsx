@@ -19,52 +19,52 @@ interface ExtendedProject {
   title: string;
   location: string;
   image: string;
-  category: "Construction" | "Renovation" | "Management";
+  category: string;
   description: string;
 }
 
 const extendedProjects: ExtendedProject[] = [
   {
-    title: "Luxury Downtown Apartments",
+    title: "Premium Roofing Installation",
     location: "New York, NY",
-    image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
-    category: "Construction",
-    description: "A 32-story luxury residential tower featuring panoramic city views, state-of-the-art amenities, and sustainable design elements. Delivered 18% under budget."
+    image: "/Assets/roofing.png",
+    category: "Roofing",
+    description: "Complete roof replacement with premium architectural shingles, enhanced insulation, and state-of-the-art ventilation systems for optimal energy efficiency."
   },
   {
-    title: "Corporate Office Tower", 
+    title: "Luxury Flooring Transformation", 
     location: "Chicago, IL",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
-    category: "Construction",
-    description: "Modern 25-story Class-A office space with LEED Gold certification, advanced smart building technology, and flexible workspaces for today's enterprises."
+    image: "/Assets/Flooring.png",
+    category: "Flooring",
+    description: "High-end hardwood and tile flooring installation throughout 4,500 sq ft residence with custom inlays and premium finishing for timeless elegance."
   },
   {
-    title: "Modern Residential Complex",
-    location: "Austin, TX",
-    image: "https://images.unsplash.com/photo-1460317442991-0ec209397118?w=800&q=80",
-    category: "Renovation",
-    description: "Complete transformation of mid-century complex into modern luxury residences with open-concept layouts, rooftop amenities, and premium finishes."
-  },
-  {
-    title: "Historic Building Restoration",
-    location: "Boston, MA",
-    image: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80",
-    category: "Renovation",
-    description: "Meticulous restoration of 19th-century landmark preserving historic character while integrating modern luxury amenities and smart technology."
-  },
-  {
-    title: "Mixed-Use Development",
-    location: "Miami, FL",
-    image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80",
-    category: "Construction",
-    description: "12-story mixed-use building combining luxury condos, retail space, and office suites with direct waterfront access and resort-style amenities."
-  },
-  {
-    title: "High-End Retail Plaza",
+    title: "Expert Plumbing Overhaul",
     location: "Los Angeles, CA",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
-    category: "Management",
-    description: "Full-service management of premier retail destination achieving 98% occupancy with comprehensive tenant coordination and marketing programs."
+    image: "/Assets/plumbing.png",
+    category: "Plumbing",
+    description: "Full plumbing system upgrade including smart water management, luxury fixtures, and whole-house water filtration for modern residential property."
+  },
+  {
+    title: "Complete Interior Painting",
+    location: "Boston, MA",
+    image: "/Assets/interiorpaint.png",
+    category: "Painting",
+    description: "Professional interior painting throughout 3-story townhome with premium low-VOC paints, custom color matching, and flawless finish work."
+  },
+  {
+    title: "Full Home Remodeling",
+    location: "Miami, FL",
+    image: "/Assets/renovation.png",
+    category: "Remodeling",
+    description: "Comprehensive kitchen and bathroom remodeling with custom cabinetry, quartz surfaces, and designer fixtures creating resort-style living spaces."
+  },
+  {
+    title: "Exterior Home Transformation",
+    location: "Austin, TX",
+    image: "/Assets/renovation.png",
+    category: "Exterior",
+    description: "Complete exterior renovation including new siding, modern windows, professional landscaping, and energy-efficient upgrades for curb appeal."
   }
 ];
 
@@ -103,9 +103,10 @@ export default function ProjectsPage() {
       <main className="min-h-screen">
         <Navigation />
         
-        {/* Hero Section */}
-        <section className="relative h-screen min-h-[800px] bg-gradient-to-br from-primary-dark via-accent-navy to-primary-dark overflow-hidden">
+{/* Hero Section */}
+        <section className="relative h-screen min-h-[800px] pt-20 bg-gradient-to-br from-primary-dark via-accent-navy to-primary-dark overflow-hidden">
           <div className="absolute inset-0">
+
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(212,175,55,0.25),transparent_50%),radial-gradient(circle_at_80%_80%,rgba(212,175,55,0.15),transparent_50%)]" />
             <Image
               src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1920&q=80"
@@ -174,13 +175,13 @@ export default function ProjectsPage() {
 
         {/* Featured Project */}
         <FeaturedProject
-          title="Skyline Tower Residences"
-          description="Our flagship project - a 45-story luxury residential tower that redefines urban living. Featuring world-class amenities, sustainable design, and unprecedented views of the city skyline. Delivered on time and 12% under budget."
-          image="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=1200&q=80"
+          title="Premium Roofing Excellence"
+          description="Complete roofing transformation featuring durable asphalt shingles, proper ventilation systems, and flawless waterproofing. Delivered with zero leaks and enhanced energy efficiency."
+          image="/Assets/roofing.png"
           stats={[
-            { label: "Budget", value: "$120M", icon: DollarSign },
-            { label: "Timeline", value: "36 months", icon: Calendar },
-            { label: "Units", value: "320", icon: Building2 },
+            { label: "Budget", value: "$85K", icon: DollarSign },
+            { label: "Timeline", value: "3 weeks", icon: Calendar },
+            { label: "Sq Ft", value: "4,200", icon: Building2 },
             { label: "Rating", value: "5.0", icon: Star }
           ]}
         />

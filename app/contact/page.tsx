@@ -44,9 +44,10 @@ export default function ContactPage() {
       <main className="min-h-screen">
         <Navigation />
         
-        {/* Hero with Parallax */}
-        <section className="relative h-screen min-h-[800px] bg-gradient-to-br from-primary-dark via-accent-navy to-primary-dark overflow-hidden">
+{/* Hero with Parallax */}
+<section className="relative pt-20 h-[calc(100vh-5rem)] min-h-[calc(800px-5rem)] bg-gradient-to-br from-primary-dark via-accent-navy to-primary-dark overflow-hidden">
           <div className="absolute inset-0">
+
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(212,175,55,0.2),transparent_50%),radial-gradient(circle_at_80%_80%,rgba(212,175,55,0.1),transparent_50%)]" />
             <Image
               src="https://images.unsplash.com/photo-1558618048-f5fcebd5d67c?w=1920&q=80" // Office/contact themed image

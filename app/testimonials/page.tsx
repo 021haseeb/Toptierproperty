@@ -32,9 +32,10 @@ export default function TestimonialsPage() {
       <main className="min-h-screen">
         <Navigation />
         
-        {/* Hero Section */}
-        <section className="relative h-screen min-h-[800px] bg-gradient-to-br from-primary-dark via-accent-navy to-primary-dark overflow-hidden">
+{/* Hero Section */}
+        <section className="relative h-screen min-h-[800px] pt-20 bg-gradient-to-br from-primary-dark via-accent-navy to-primary-dark overflow-hidden">
           <div className="absolute inset-0">
+
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(212,175,55,0.2),transparent_50%),radial-gradient(circle_at_80%_80%,rgba(212,175,55,0.1),transparent_50%)]" />
             <Image
               src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80"

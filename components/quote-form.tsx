@@ -78,7 +78,7 @@ export default function QuoteForm({ isOpen, onClose }: QuoteFormProps) {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.3 }}
-          className="fixed inset-0 z-50 flex items-center justify-center p-4"
+          className="fixed inset-0 z-50 flex items-start justify-center p-4 overflow-y-auto"
         >
           {/* Backdrop */}
           <motion.div
@@ -91,15 +91,14 @@ export default function QuoteForm({ isOpen, onClose }: QuoteFormProps) {
 
           {/* Modal */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.8, y: 50 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.8, y: 50 }}
+            initial={{ opacity: 0, y: 50 }}
+animate={{ opacity: 1, y: 0 }}
+exit={{ opacity: 0, y: 50 }}
             transition={{
-              type: "spring",
-              stiffness: 300,
-              damping: 25,
-            }}
-            className="relative w-full max-w-2xl bg-primary-dark border border-accent-gold/30 rounded-2xl overflow-hidden"
+  duration: 0.3,
+  ease: "easeOut",
+}}
+            className="relative w-full max-w-2xl bg-primary-dark border border-accent-gold/30 rounded-2xl overflow-hidden mt-20 mb-10 md:mt-10 will-change-transform"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Decorative gradient overlay */}
@@ -386,14 +385,7 @@ export default function QuoteForm({ isOpen, onClose }: QuoteFormProps) {
                         className="w-full flex items-center justify-center gap-2 bg-accent-gold text-primary-dark px-8 py-4 rounded-lg font-bold text-lg hover:bg-accent-gold/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
-                        animate={{
-                          scale: [1, 1.01, 1],
-                        }}
-                        transition={{
-                          duration: 1.5,
-                          repeat: Infinity,
-                          repeatType: "reverse",
-                        }}
+                        
                       >
                         <Send className="w-5 h-5" />
                         Request Quote

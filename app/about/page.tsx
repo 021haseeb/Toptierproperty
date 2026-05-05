@@ -17,8 +17,8 @@ const stats = [
 ];
 
 const teamMembers = [
-  { name: "Haseeb Rajput", role: "Founder & CEO", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" },
-  { name: "Sarah Johnson", role: "Head of Operations", image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&q=80" },
+  { name: "David Lee", role: "Founder & CEO", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" },
+  { name: "Sarah Johnson", role: "Head of Operations", image: "./Assets/Sarah.png" },
   { name: "Michael Chen", role: "Construction Manager", image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80" },
 ];
 
@@ -51,9 +51,10 @@ export default function AboutPage() {
       <main className="min-h-screen">
         <Navigation />
         
-        {/* Hero */}
-        <section className="relative h-screen min-h-[700px] bg-gradient-to-br from-primary-dark via-accent-navy to-primary-dark overflow-hidden">
+{/* Hero */}
+<section className="relative pt-20 min-h-screen bg-gradient-to-br from-primary-dark via-accent-navy to-primary-dark overflow-hidden"> 
           <div className="absolute inset-0">
+
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-accent-gold/10 via-transparent to-transparent" />
             <Image
               src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1920&q=80"
@@ -64,7 +65,7 @@ export default function AboutPage() {
             />
           </div>
           
-          <div className="relative z-10 h-screen flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto">
+          <div className="relative z-10 min-h-screen flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto py-20">
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}

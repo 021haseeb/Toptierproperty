@@ -10,7 +10,7 @@ export default function Hero() {
   const [isQuoteOpen, setIsQuoteOpen] = useState(false);
 
   return (
-    <section className="relative h-screen min-h-[700px] overflow-hidden">
+    <section className="relative h-screen min-h-[760px] overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
@@ -74,7 +74,7 @@ transition={{ duration: 0.8, delay: 0.2 }}
               className="flex flex-col items-center justify-center gap-4 pt-4"
             >
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <motion.a
+                {/* <motion.a
                   href="#contact"
                   className="group flex items-center gap-2 bg-accent-gold text-primary-dark px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-gold/90 transition-all"
                   whileHover={{ scale: 1.05 }}
@@ -82,8 +82,8 @@ transition={{ duration: 0.8, delay: 0.2 }}
                 >
                   Get Free Consultation
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </motion.a>
-                <motion.a
+                </motion.a> */}
+                {/* <motion.a
                   href="#projects"
                   className="flex items-center gap-2 border-2 border-white/30 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:border-accent-gold hover:bg-accent-gold/10 transition-all"
                   whileHover={{ scale: 1.05 }}
@@ -91,7 +91,7 @@ transition={{ duration: 0.8, delay: 0.2 }}
                 >
                   <Play className="w-5 h-5" />
                   View Projects
-                </motion.a>
+                </motion.a> */}
               </div>
               {/* Get A Quote Button */}
               <motion.button

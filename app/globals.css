@@ -2,17 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 :root {
   --foreground-rgb: 15, 23, 42;
   --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 248, 250, 252;
 }
-
-html {
-  scroll-behavior: smooth;
+* {
+  box-sizing: border-box;
 }
 
-body {
+
+html,body {
+    width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,

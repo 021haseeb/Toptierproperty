@@ -20,7 +20,7 @@ const config: Config = {
         offwhite: "#F8FAFC",
       },
       fontFamily: {
-        heading: ["var(--font-playfair)", "serif"],
+        heading: ["var(--font-dm-sans)", "sans-serif"],
         body: ["var(--font-dm-sans)", "sans-serif"],
       },
       animation: {

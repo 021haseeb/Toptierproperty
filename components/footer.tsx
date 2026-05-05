@@ -97,19 +97,19 @@ export default function Footer() {
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-accent-gold" />
                 <a href="tel:+1234567890" className="text-white/60 hover:text-accent-gold transition-colors">
-                  +1 (234) 567-890
+                  +1 (334) 320-2024
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-accent-gold" />
                 <a href="mailto:info@toptierproperty.com" className="text-white/60 hover:text-accent-gold transition-colors">
-                  info@toptierproperty.com
+                  info@toptierpropertygroup.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Clock className="w-5 h-5 text-accent-gold" />
                 <span className="text-white/60">
-                  Mon - Fri: 9AM - 6PM
+                  Mon - Fri: 8am - 5:30am
                 </span>
               </li>
             </ul>
@@ -120,7 +120,7 @@ export default function Footer() {
         <div className="border-t border-white/10 mt-12 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-white/40 text-sm">
-              © {currentYear} Haseeb Rajput. All rights reserved.
+              © {currentYear} Top Tier Property Group. All rights reserved.
             </p>
             <div className="flex items-center gap-6 text-sm">
               <a href="#" className="text-white/40 hover:text-accent-gold transition-colors">
